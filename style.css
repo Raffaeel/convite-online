@@ -1,0 +1,51 @@
+
+
+        
+        /* Fundo com gradiente */
+        body {
+            background: linear-gradient(45deg, rgba(11, 9, 9, 0.904), rgb(253, 255, 255));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh; /* Ocupar toda a altura da tela */
+            
+        }
+
+     
+        .convite {
+            border-radius: 15px;
+            border-style: double;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            max-width: 90%; /* Para evitar que fique muito grande em telas pequenas */
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            margin-top: 15%;
+        }
+
+        /* Imagem Responsiva */
+        img {
+            max-width: 100%; /* Garante que a imagem nunca ultrapasse o container */
+            height: auto; /* Mantém a proporção original */
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) { /* Tablets e celulares grandes */
+            .convite {
+                width: 80%;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) { /* Celulares pequenos */
+            .convite {
+                width: 90%;
+                padding: 10px;
+            }
+
+            img {
+                max-width: 90%; /* Reduz o tamanho da imagem em telas menores */
+            }
+        }
